@@ -1,1 +1,40 @@
-{"name":"veterinaria-trevo-refinado","version":"2.0.0","private":true,"scripts":{"dev":"next dev","build":"next build","start":"next start","lint":"next lint"},"dependencies":{"@hookform/resolvers":"latest","@radix-ui/react-dialog":"latest","@radix-ui/react-label":"latest","@radix-ui/react-select":"latest","@radix-ui/react-slot":"latest","class-variance-authority":"latest","clsx":"latest","framer-motion":"latest","lucide-react":"latest","next":"15.0.0","react":"latest","react-dom":"latest","react-hook-form":"latest","tailwind-merge":"latest","tailwindcss-animate":"latest","zod":"latest"},"devDependencies":{"@types/node":"latest","@types/react":"latest","@types/react-dom":"latest","autoprefixer":"latest","eslint":"latest","eslint-config-next":"15.0.0","postcss":"latest","tailwindcss":"latest","typescript":"latest"}}
+{
+  "name": "veterinaria-trevo-refinado",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "latest",
+    "@radix-ui/react-dialog": "latest",
+    "@radix-ui/react-label": "latest",
+    "@radix-ui/react-select": "latest",
+    "@radix-ui/react-slot": "latest",
+    "class-variance-authority": "latest",
+    "clsx": "latest",
+    "framer-motion": "latest",
+    "lucide-react": "latest",
+    "next": "15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "latest",
+    "tailwind-merge": "latest",
+    "tailwindcss-animate": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "15.0.0",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}
