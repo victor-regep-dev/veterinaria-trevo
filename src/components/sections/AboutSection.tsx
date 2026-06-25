@@ -1,2 +1,45 @@
-import Image from "next/image";import { CheckCircle2, Heart, Shield, UserRound, Activity, SmilePlus, HandHeart } from "lucide-react";import { Button } from "@/components/ui/Button";import { SectionTitle } from "@/components/ui/SectionTitle";const dif=[['Ambiente seguro',Shield],['Profissionais experientes',UserRound],['Equipamentos modernos',Activity],['Acompanhamento contínuo',CheckCircle2],['Atendimento humanizado',SmilePlus],['Transparência e confiança',HandHeart]];export function AboutSection(){return <section id="sobre" className="section-pad bg-[#FFFDF8]"><div className="container-trevo grid items-center gap-14 lg:grid-cols-[1.05fr_.95fr]"><div id="estrutura" className="relative pb-12"><Image src="/images/fachada-trevo.png" alt="Fachada da Veterinária Trevo" width={1920} height={1080} className="h-[360px] w-full rounded-[2rem] object-cover shadow-premium md:h-[430px]"/><div className="absolute -bottom-2 left-7 grid h-36 w-36 place-items-center rounded-full bg-trevo-dark p-5 text-center text-white shadow-premium ring-8 ring-[#FFFDF8]"><p className="text-xs font-black leading-snug"><span className="text-xl text-trevo-yellow block mb-1">+10 anos</span>cuidando de pets com amor</p></div><div className="absolute bottom-0 right-7 grid max-w-[260px] grid-cols-2 gap-3 rounded-[1.5rem] bg-white p-3 shadow-premium"><Image src="/images/cao-gato.png" alt="Pets atendidos" width={180} height={140} className="h-28 rounded-2xl bg-trevo-cream object-contain"/><div className="rounded-2xl bg-trevo-cream p-4 text-sm font-black text-trevo-dark">Estrutura acolhedora para todas as fases do seu pet.</div></div></div><div><SectionTitle eyebrow="SOBRE NÓS" title={`Mais que uma clínica, 
-somos parceiros na saúde do seu pet.`}/><p className="mt-5 text-base leading-relaxed text-trevo-muted md:text-lg">Aqui cada atendimento é feito com amor, respeito e dedicação. Nosso compromisso é oferecer o melhor cuidado para que seu pet viva mais e melhor ao seu lado.</p><div className="mt-7 grid gap-4 sm:grid-cols-2">{dif.map(([label,Icon])=><div key={label as string} className="flex items-center gap-3 rounded-2xl bg-white p-3 font-black text-trevo-dark shadow-sm"><Icon className="text-trevo-soft" size={20}/>{label as string}</div>)}</div></div></div></section>}
+import Image from "next/image";
+import { CheckCircle2, Shield, UserRound, Activity, SmilePlus, HandHeart } from "lucide-react";
+import { SectionTitle } from "@/components/ui/SectionTitle";
+
+const dif = [
+  ['Ambiente seguro', Shield],
+  ['Profissionais experientes', UserRound],
+  ['Equipamentos modernos', Activity],
+  ['Acompanhamento contínuo', CheckCircle2],
+  ['Atendimento humanizado', SmilePlus],
+  ['Transparência e confiança', HandHeart],
+] as const;
+
+export function AboutSection() {
+  return (
+    <section id="sobre" className="section-pad bg-[#FFFDF8]">
+      <div className="container-trevo grid items-center gap-14 lg:grid-cols-[1.05fr_.95fr]">
+        <div className="relative pb-12">
+          <Image src="/images/fachada-trevo.png" alt="Fachada da Veterinária Trevo" width={1920} height={1080} className="h-[360px] w-full rounded-[2rem] object-cover shadow-premium md:h-[430px]" />
+          <div className="absolute -bottom-2 left-7 grid h-36 w-36 place-items-center rounded-full bg-trevo-dark p-5 text-center text-white shadow-premium ring-8 ring-[#FFFDF8]">
+            <p className="text-xs font-black leading-snug">
+              <span className="text-xl text-trevo-yellow block mb-1">+10 anos</span>cuidando de pets com amor
+            </p>
+          </div>
+          <div className="absolute bottom-0 right-7 grid max-w-[260px] grid-cols-2 gap-3 rounded-[1.5rem] bg-white p-3 shadow-premium">
+            <Image src="/images/cao-gato.png" alt="Pets atendidos" width={180} height={140} className="h-28 rounded-2xl bg-trevo-cream object-contain" />
+            <div className="rounded-2xl bg-trevo-cream p-4 text-sm font-black text-trevo-dark">Estrutura acolhedora para todas as fases do seu pet.</div>
+          </div>
+        </div>
+        <div>
+          <SectionTitle eyebrow="SOBRE NÓS" title="Mais que uma clínica, somos parceiros na saúde do seu pet." />
+          <p className="mt-5 text-base leading-relaxed text-trevo-muted md:text-lg">Aqui cada atendimento é feito com amor, respeito e dedicação. Nosso compromisso é oferecer o melhor cuidado para que seu pet viva mais e melhor ao seu lado.</p>
+          <div className="mt-7 grid gap-4 sm:grid-cols-2">
+            {dif.map(([label, Icon]) => (
+              <div key={label as string} className="flex items-center gap-3 rounded-2xl bg-white p-3 font-black text-trevo-dark shadow-sm">
+                <Icon className="text-trevo-soft" size={20} />
+                {label as string}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
