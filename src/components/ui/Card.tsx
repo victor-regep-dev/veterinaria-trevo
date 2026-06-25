@@ -1,0 +1,1 @@
+import { ReactNode } from "react";export function Card({children,className=""}:{children:ReactNode;className?:string}){return <div className={`rounded-[1.75rem] border border-trevo-line/80 bg-white p-6 shadow-card ${className}`}>{children}</div>}

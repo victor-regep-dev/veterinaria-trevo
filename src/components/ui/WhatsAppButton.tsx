@@ -1,0 +1,1 @@
+import { MessageCircle } from "lucide-react";import { defaultWhatsAppUrl } from "@/lib/whatsapp";export function WhatsAppButton(){return <a href={defaultWhatsAppUrl} aria-label="Agendar pelo WhatsApp" className="fixed bottom-5 right-5 z-50 grid h-14 w-14 place-items-center rounded-full bg-green-500 text-white shadow-2xl ring-4 ring-white md:hidden"><MessageCircle/></a>}

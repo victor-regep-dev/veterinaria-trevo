@@ -1,0 +1,1 @@
+export const contact={whatsappNumber:"5511937732263",whatsappLabel:"+55 11 93773-2263",phones:["(11) 98922-9395","(11) 4821-4455"],email:"veterinariatrevo@gmail.com",address:"Av. dos Autonomistas, 885 - Vila Figueiredo, Rio Grande da Serra - SP",mapUrl:"https://www.google.com/maps/search/?api=1&query=Av.+dos+Autonomistas,+885,+Vila+Figueiredo,+Rio+Grande+da+Serra+-+SP"};
